@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-hover" style="cursor: pointer;">
+        <thead class="thead-light">
+          <tr>
+            <th>CustomerId</th>
+            <th>Surname</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Occupation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customers" routerLink="/customers/{{customer.id}}">
+            <td>#{{customer.id}}</td>
+            <td>{{customer.surname}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.mobile}}</td>
+            <td>{{customer.occupation}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>

@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class CustomerProfileController : BaseApiController
+    public class CustomerController : BaseApiController
     {
         private readonly ICustomerProfileRepository _customerProfileRepo;
-        public CustomerProfileController(ICustomerProfileRepository customerProfileRepo)
+        public CustomerController(ICustomerProfileRepository customerProfileRepo)
         {
             _customerProfileRepo = customerProfileRepo;
         }
