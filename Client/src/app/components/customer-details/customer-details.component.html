@@ -16,7 +16,7 @@
           <button
             class="btn btn-lg btn-primary btn-block"
             type="submit"
-            [disabled]="customerUpdateForm.invalid"
+            [disabled]="customerUpdateForm.invalid || !customerUpdateForm.dirty"
             >Update
           </button>
           <button  class="btn btn-lg btn-danger btn-block" (click)="onDelete()">Delete</button>
