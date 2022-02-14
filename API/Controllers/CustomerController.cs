@@ -68,7 +68,7 @@ namespace API.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteCustomerProfile(int id)
         {
             var existingProfile = await _customerProfileRepo.GetCustomerProfileByIdAsync(id);
